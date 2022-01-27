@@ -3,14 +3,14 @@ import { getWheels, setWheel } from "./dataAccess.js"
 const wheels = getWheels()
 
 export const Wheels = () => {
-    let html = `<select id="wheel">`
+    let html =
+    `<select id="wheel">
+        <option selected="">Please Select</option>`
 
     // Converting objects to <li> elements
     for (const wheel of wheels) {
-            html +=
-            `
-                <option value="${wheel.id}">${wheel.type}</option>
-            `
+        html +=
+            `<option value="${wheel.id}">${wheel.type}</option>`
     }
 
     html += "</select>"

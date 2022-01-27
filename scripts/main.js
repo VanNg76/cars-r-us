@@ -7,3 +7,9 @@ const renderAllHTML = () => {
 }
 
 renderAllHTML()
+
+// Regenerate HTML state changed
+document.addEventListener("stateChanged", event => {
+    renderAllHTML()
+})
+

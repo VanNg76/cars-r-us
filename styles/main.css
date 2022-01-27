@@ -1,17 +1,59 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
+
+/*Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+textarea {
+	color: #404040;
+	font-family: "Comfortaa", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Patua One", serif;
+  letter-spacing: 2px;
+}
+
+h1 {
+  color: blue;
+  font-size: 3rem;
+  text-align: center;
+}
+
+/* ul {
+    list-style-type: none;
+    padding-inline-start: 0.25rem;
+} */
+
+#color, #interior, #technology, #wheel {
+  width: 250px;
+}
+
+#orderButton {
+    margin: 1rem 0 2rem 2rem;
+    padding: 0.5rem;
+    background-color: rgb(227, 72, 72);
+    color: lightgoldenrodyellow;
+    font-size: 1rem;
+}
+
 .options {
-    flex-basis: 28%;
-    margin: 0 2rem;
-    border: 1px dashed dodgerblue;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    box-shadow: 0.25rem 0.25rem 0.5rem rgb(143, 143, 143);
+    background-color: rgb(50, 114, 173);
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
 }
 
 .choices {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    /* margin: 5rem */
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-gap: 10px;
+    background-color: #fff;
+    color: #444;
 }
 

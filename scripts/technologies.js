@@ -3,14 +3,14 @@ import { getTechnologies, setTechnology } from "./dataAccess.js"
 const technologies = getTechnologies()
 
 export const Technologies = () => {
-    let html = `<select id="technology">`
+    let html =
+    `<select id="technology">
+        <option selected="">Please Select</option>`
 
     // Converting objects to <li> elements
     for (const technology of technologies) {
-            html +=
-            `
-                <option value="${technology.id}">${technology.version}</option>
-            `
+        html +=
+            `<option value="${technology.id}">${technology.version}</option>`
     }
 
     html += "</select>"

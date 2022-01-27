@@ -3,14 +3,20 @@ import { getInteriors, setInterior } from "./dataAccess.js"
 const interiors = getInteriors()
 
 export const Interiors = () => {
-    let html = `<select id="interior">`
+    let html =
+    `<select id="interior">`
 
     // Converting objects to <li> elements
     for (const interior of interiors) {
+        if (interior.material === "Black Leather") {
+            html +=
+            `<option selected value="${interior.id}">${interior.material}</option>`
+        } else {
             html +=
             `
                 <option value="${interior.id}">${interior.material}</option>
             `
+        }
     }
 
     html += "</select>"
